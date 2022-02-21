@@ -10,7 +10,11 @@ class TestCase(unittest.TestCase):
 
     def test2(self):
         expected = "Goodbye World"
-        self.assertEqual(task.my_func(), expected)
+        self.assertNotEqual(task.my_func(), expected)
+
+    def test3(self):
+        expected = "Goodbye Worldz"
+        self.assertNotEqual(task.my_func(), expected)
 
 
 if __name__ == '__main__':
